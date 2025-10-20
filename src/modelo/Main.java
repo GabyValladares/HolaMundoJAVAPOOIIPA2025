@@ -24,8 +24,16 @@ public class Main {
         n1.valor=8;
         Numero n2=new Numero();
         n2.valor=12;
+        //nuevo objeto de tipo Numero
+        //el objeto se llama casa 
+        //n1.sumar(n2);
+        Numero casa=new Numero();
+        casa.nombre="Número 3";
+        casa.tipo="Decimal";
+        casa.valor=3.3;
+        casa.sumar(n2);
         
-        n1.sumar(n2);
+        
     }
     
 }
