@@ -18,20 +18,24 @@ public class Main {
         int suma=num1+num2;
         //POO
         //Instanciar un Objeto
-        Numero n1=new Numero();
-        n1.nombre="Número 1";
-        n1.tipo="Entero";
-        n1.valor=8;
+        Numero n1=new Numero("Número 1", "Entero", 8);
+        //Cuando los atributos public
+//        n1.nombre="Número 1";
+//        n1.tipo="Entero";
+//        n1.valor=8;
+//Cuando los atributos son private
+          
         Numero n2=new Numero();
-        n2.valor=12;
+        n2.setValor(12);
         //nuevo objeto de tipo Numero
         //el objeto se llama casa 
-        //n1.sumar(n2);
+        n1.sumar(n2);
         Numero casa=new Numero();
-        casa.nombre="Número 3";
-        casa.tipo="Decimal";
-        casa.valor=3.3;
+        casa.setNombre("Número 3");
+        casa.setTipo("Decimal");
+        casa.setValor(3.3);
         casa.sumar(n2);
+        casa.imprimir();
         
         
     }
